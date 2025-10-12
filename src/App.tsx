@@ -43,9 +43,7 @@ function App() {
             key={path}
             to={path}
             end={end}
-            className={({ isActive }) =>
-              isActive ? 'nav-link active' : 'nav-link'
-            }
+            className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
           >
             {t(labelKey)}
           </NavLink>
