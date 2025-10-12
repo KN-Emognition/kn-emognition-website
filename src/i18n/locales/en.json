@@ -1,0 +1,10 @@
+{
+  "app": {
+    "title": "Vite + React",
+    "countLabel": "Count is {{count}}",
+    "editHint": "Edit {{file}} and save to test HMR",
+    "docsHint": "Click on the Vite and React logos to learn more",
+    "switchToEnglish": "English",
+    "switchToPolish": "Polish"
+  }
+}

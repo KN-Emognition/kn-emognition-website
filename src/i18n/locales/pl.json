@@ -1,0 +1,10 @@
+{
+  "app": {
+    "title": "Vite + React",
+    "countLabel": "Licznik: {{count}}",
+    "editHint": "Edytuj {{file}} i zapisz, aby sprawdzić HMR",
+    "docsHint": "Kliknij logotypy Vite i React, aby dowiedzieć się więcej",
+    "switchToEnglish": "Angielski",
+    "switchToPolish": "Polski"
+  }
+}
