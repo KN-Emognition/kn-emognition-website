@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { NavLink, Route, Routes } from 'react-router-dom'
-import { appRoutes, navigationRoutes } from '../../router'
+import { NavLink, Outlet } from 'react-router-dom'
 
 const AppLayout = () => {
   const { t, i18n } = useTranslation()
@@ -29,21 +28,27 @@ const AppLayout = () => {
       </header>
       <nav>
         <ul>
-          {navigationRoutes.map(({ path, labelKey, end }) => (
-            <li key={path}>
-              <NavLink to={path} end={end}>
-                {t(labelKey)}
-              </NavLink>
-            </li>
-          ))}
+          <li>
+            <NavLink to="/" end>
+              {t('navigation.home')}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/zespol">{t('navigation.team')}</NavLink>
+          </li>
+          <li>
+            <NavLink to="/projekty">{t('navigation.projects')}</NavLink>
+          </li>
+          <li>
+            <NavLink to="/rekrutacja">{t('navigation.recruitment')}</NavLink>
+          </li>
+          <li>
+            <NavLink to="/kontakt">{t('navigation.contact')}</NavLink>
+          </li>
         </ul>
       </nav>
       <main>
-        <Routes>
-          {appRoutes.map(({ path, element }) => (
-            <Route key={path} path={path} element={element} />
-          ))}
-        </Routes>
+        <Outlet />
       </main>
     </div>
   )

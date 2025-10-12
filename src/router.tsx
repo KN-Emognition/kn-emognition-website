@@ -1,5 +1,5 @@
-import type { ReactElement } from 'react'
-
+import { createBrowserRouter } from 'react-router-dom'
+import AppLayout from './components/AppLayout/index.tsx'
 import ContactPage from './pages/ContactPage.tsx'
 import LandingPage from './pages/LandingPage.tsx'
 import NotFoundPage from './pages/NotFoundPage.tsx'
@@ -7,54 +7,35 @@ import ProjectsPage from './pages/ProjectsPage.tsx'
 import RecruitmentPage from './pages/RecruitmentPage.tsx'
 import TeamPage from './pages/TeamPage.tsx'
 
-type AppRoute = {
-  path: string
-  element: ReactElement
-  labelKey?: string
-  end?: boolean
-  includeInNav?: boolean
-}
-
-export const appRoutes: AppRoute[] = [
+export const router = createBrowserRouter([
   {
     path: '/',
-    element: <LandingPage />,
-    labelKey: 'navigation.home',
-    includeInNav: true,
-    end: true,
+    element: <AppLayout />,
+    children: [
+      {
+        index: true,
+        element: <LandingPage />,
+      },
+      {
+        path: 'zespol',
+        element: <TeamPage />,
+      },
+      {
+        path: 'projekty',
+        element: <ProjectsPage />,
+      },
+      {
+        path: 'rekrutacja',
+        element: <RecruitmentPage />,
+      },
+      {
+        path: 'kontakt',
+        element: <ContactPage />,
+      },
+      {
+        path: '*',
+        element: <NotFoundPage />,
+      },
+    ],
   },
-  {
-    path: '/zespol',
-    element: <TeamPage />,
-    labelKey: 'navigation.team',
-    includeInNav: true,
-  },
-  {
-    path: '/projekty',
-    element: <ProjectsPage />,
-    labelKey: 'navigation.projects',
-    includeInNav: true,
-  },
-  {
-    path: '/rekrutacja',
-    element: <RecruitmentPage />,
-    labelKey: 'navigation.recruitment',
-    includeInNav: true,
-  },
-  {
-    path: '/kontakt',
-    element: <ContactPage />,
-    labelKey: 'navigation.contact',
-    includeInNav: true,
-  },
-  {
-    path: '*',
-    element: <NotFoundPage />,
-  },
-]
-
-type NavigationRoute = AppRoute & { labelKey: string }
-
-export const navigationRoutes: NavigationRoute[] = appRoutes.filter(
-  (route): route is NavigationRoute => Boolean(route.includeInNav && route.labelKey),
-)
+])
