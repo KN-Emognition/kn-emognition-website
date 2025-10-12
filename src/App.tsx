@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { NavLink, Route, Routes } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './App.scss'
 import { appRoutes, navigationRoutes } from './router/routes.tsx'
 
 function App() {

@@ -72,3 +72,4 @@ export default tseslint.config([
 
 - Run `npm run format` to apply Prettier formatting or `npm run format:check` to verify formatting.
 - A Husky pre-commit hook runs `npm run lint:staged`, which uses lint-staged to format staged files with Prettier and fix/lint them with ESLint before they are committed. Install dependencies with `npm install` to activate the hook locally.
+- Stylesheets use SCSS (`.scss`). Vite compiles them via the bundled `sass` dependency, so regular imports like `import './App.scss'` work out of the box.
