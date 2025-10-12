@@ -1,10 +1,41 @@
 {
   "app": {
-    "title": "Vite + React",
-    "countLabel": "Count is {{count}}",
-    "editHint": "Edit {{file}} and save to test HMR",
-    "docsHint": "Click on the Vite and React logos to learn more",
+    "title": "Knemognition Student Organization",
     "switchToEnglish": "English",
     "switchToPolish": "Polish"
+  },
+  "navigation": {
+    "home": "Landing Page",
+    "team": "Team",
+    "projects": "Projects",
+    "recruitment": "Recruitment",
+    "contact": "Contact"
+  },
+  "pages": {
+    "landing": {
+      "heading": "Welcome to Knemognition",
+      "lead": "We are a student organization focused on innovative engineering projects and community-driven learning.",
+      "cta": "Discover what we are building together."
+    },
+    "team": {
+      "heading": "Our Team",
+      "lead": "Meet the passionate students who coordinate research, events, and partnerships within Knemognition."
+    },
+    "projects": {
+      "heading": "Projects",
+      "lead": "Explore current and past initiatives that combine technology, creativity, and social impact."
+    },
+    "recruitment": {
+      "heading": "Recruitment",
+      "lead": "Join us to develop your skills, collaborate with peers, and deliver meaningful solutions."
+    },
+    "contact": {
+      "heading": "Contact",
+      "lead": "Reach out for collaboration opportunities, event invitations, or general inquiries."
+    },
+    "notFound": {
+      "heading": "Page Not Found",
+      "lead": "We could not find the page you were looking for."
+    }
   }
 }

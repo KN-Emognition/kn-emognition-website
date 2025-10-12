@@ -1,10 +1,41 @@
 {
   "app": {
-    "title": "Vite + React",
-    "countLabel": "Licznik: {{count}}",
-    "editHint": "Edytuj {{file}} i zapisz, aby sprawdzić HMR",
-    "docsHint": "Kliknij logotypy Vite i React, aby dowiedzieć się więcej",
+    "title": "Organizacja studencka Knemognition",
     "switchToEnglish": "Angielski",
     "switchToPolish": "Polski"
+  },
+  "navigation": {
+    "home": "Strona główna",
+    "team": "Zespół",
+    "projects": "Projekty",
+    "recruitment": "Rekrutacja",
+    "contact": "Kontakt"
+  },
+  "pages": {
+    "landing": {
+      "heading": "Witamy w Knemognition",
+      "lead": "Jesteśmy organizacją studencką, która stawia na innowacyjne projekty inżynierskie i naukę poprzez współpracę.",
+      "cta": "Poznaj, nad czym wspólnie pracujemy."
+    },
+    "team": {
+      "heading": "Nasz zespół",
+      "lead": "Poznaj zaangażowanych studentów, którzy koordynują badania, wydarzenia i partnerstwa w Knemognition."
+    },
+    "projects": {
+      "heading": "Projekty",
+      "lead": "Odkryj obecne i zakończone inicjatywy, łączące technologię, kreatywność i wpływ społeczny."
+    },
+    "recruitment": {
+      "heading": "Rekrutacja",
+      "lead": "Dołącz do nas, rozwijaj kompetencje, współpracuj z rówieśnikami i twórz rozwiązania z prawdziwym znaczeniem."
+    },
+    "contact": {
+      "heading": "Kontakt",
+      "lead": "Skontaktuj się z nami, aby nawiązać współpracę, zaprosić nas na wydarzenie lub zadać pytanie."
+    },
+    "notFound": {
+      "heading": "Nie znaleziono strony",
+      "lead": "Nie mogliśmy odnaleźć strony, której szukasz."
+    }
   }
 }
