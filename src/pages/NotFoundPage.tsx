@@ -6,6 +6,7 @@ const NotFoundPage = () => {
   return (
     <section className="page">
       <h1>{t('pages.notFound.heading')}</h1>
+
       <p className="page-lead">{t('pages.notFound.lead')}</p>
     </section>
   )
