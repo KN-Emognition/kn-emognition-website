@@ -1,11 +1,11 @@
 import type { ReactElement } from 'react'
 
-import ContactPage from '../pages/ContactPage.tsx'
-import LandingPage from '../pages/LandingPage.tsx'
-import NotFoundPage from '../pages/NotFoundPage.tsx'
-import ProjectsPage from '../pages/ProjectsPage.tsx'
-import RecruitmentPage from '../pages/RecruitmentPage.tsx'
-import TeamPage from '../pages/TeamPage.tsx'
+import ContactPage from './pages/ContactPage.tsx'
+import LandingPage from './pages/LandingPage.tsx'
+import NotFoundPage from './pages/NotFoundPage.tsx'
+import ProjectsPage from './pages/ProjectsPage.tsx'
+import RecruitmentPage from './pages/RecruitmentPage.tsx'
+import TeamPage from './pages/TeamPage.tsx'
 
 type AppRoute = {
   path: string
