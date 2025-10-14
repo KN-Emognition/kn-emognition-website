@@ -101,7 +101,7 @@ const AppLayout = () => {
     },
   ]
 
-  const start = <img alt="logo" src="src/assets/logo-wide.svg" height="50" className="mr-2"></img>
+  const start = <img alt="logo" src="logo-wide.svg" height="50" className="mr-2"></img>
   const end = (
     <div className="flex align-items-center gap-2">
       <Dropdown
