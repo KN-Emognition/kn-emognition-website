@@ -1,11 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom'
 import AppLayout from './components/AppLayout/index.tsx'
-import ContactPage from './pages/ContactPage.tsx'
-import LandingPage from './pages/LandingPage.tsx'
 import NotFoundPage from './pages/NotFoundPage.tsx'
-import ProjectsPage from './pages/ProjectsPage.tsx'
-import RecruitmentPage from './pages/RecruitmentPage.tsx'
-import TeamPage from './pages/TeamPage.tsx'
+import { ScrollLayout } from './ScrollLayout.tsx'
+import HeartAuth from './pages/projects/HeartAuth.tsx'
 
 export const router = createBrowserRouter([
   {
@@ -14,23 +11,23 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <LandingPage />,
+        element: <ScrollLayout />,
       },
       {
-        path: 'zespol',
-        element: <TeamPage />,
+        path: 'team',
+        element: <ScrollLayout />,
       },
       {
-        path: 'projekty',
-        element: <ProjectsPage />,
+        path: 'recruitment',
+        element: <ScrollLayout />,
       },
       {
-        path: 'rekrutacja',
-        element: <RecruitmentPage />,
+        path: 'contact',
+        element: <ScrollLayout />,
       },
       {
-        path: 'kontakt',
-        element: <ContactPage />,
+        path: 'projects/heartauth',
+        element: <HeartAuth />,
       },
       {
         path: '*',
