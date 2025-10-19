@@ -6,20 +6,27 @@
   },
   "navigation": {
     "home": "Strona główna",
+    "about": "O nas",
     "team": "Zespół",
     "projects": "Projekty",
     "recruitment": "Rekrutacja",
     "contact": "Kontakt"
   },
+  "socials": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "facebook": "Facebook",
+    "instagram": "Instagram"
+  },
   "pages": {
     "landing": {
-      "heading": "Witamy w Knemognition",
-      "lead": "Jesteśmy organizacją studencką, która stawia na innowacyjne projekty inżynierskie i naukę poprzez współpracę.",
+      "heading": "Witamy w KN Emognition",
+      "lead": "Gdzie emocje spotykają się z algorytmami.",
       "cta": "Poznaj, nad czym wspólnie pracujemy."
     },
     "team": {
       "heading": "Nasz zespół",
-      "lead": "Poznaj zaangażowanych studentów, którzy koordynują badania, wydarzenia i partnerstwa w Knemognition."
+      "lead": "Poznaj zaangażowanych studentów, którzy koordynują badania, wydarzenia i partnerstwa w KN Emognition."
     },
     "projects": {
       "heading": "Projekty",
@@ -27,11 +34,15 @@
     },
     "recruitment": {
       "heading": "Rekrutacja",
-      "lead": "Dołącz do nas, rozwijaj kompetencje, współpracuj z rówieśnikami i twórz rozwiązania z prawdziwym znaczeniem."
+      "lead": "Chcesz dołączyć do naszego zespołu? Rekrutacja do KN Emognition jest teraz otwarta - wypełnij tylko formularz zgłoszeniowy, a my zajmiemy się resztą!"
     },
     "contact": {
       "heading": "Kontakt",
       "lead": "Skontaktuj się z nami, aby nawiązać współpracę, zaprosić nas na wydarzenie lub zadać pytanie."
+    },
+    "aboutus": {
+      "heading": "O nas",
+      "lead": "Dowiedz się więcej o misji, wizji i wartościach KN Emognition oraz o tym, jak kształtujemy przyszłość interakcji człowiek-komputer."
     },
     "notFound": {
       "heading": "Nie znaleziono strony",

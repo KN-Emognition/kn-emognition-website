@@ -14,6 +14,10 @@ export const router = createBrowserRouter([
         element: <ScrollLayout />,
       },
       {
+        path: 'about',
+        element: <ScrollLayout />,
+      },
+      {
         path: 'team',
         element: <ScrollLayout />,
       },

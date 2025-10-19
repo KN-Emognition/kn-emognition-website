@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Jan Szyndlarewicz",
+    "role": {
+      "en": "President",
+      "pl": "Prezes koła"
+    },
+    "photoUrl": "jan-szyndlarewicz.jpg",
+    "links": {
+      "github": "https://github.com/JanSzyndlarewicz",
+      "linkedin": "https://www.linkedin.com/in/jan-szyndlarewicz/"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Karol Zając",
+    "role": {
+      "en": "Architect",
+      "pl": "Architekt"
+    },
+    "photoUrl": "karol-zajac.jpg",
+    "links": {
+      "github": "https://github.com/poziomk3",
+      "linkedin": "https://www.linkedin.com/in/p3-karol-zajac"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Aleksander Woźniak",
+    "role": {
+      "en": "Vice-President",
+      "pl": "Wiceprezes koła"
+    },
+    "photoUrl": "aleksander-wozniak.jpg",
+    "links": {
+      "github": "https://github.com/0leslaw",
+      "linkedin": "https://www.linkedin.com/in/aleksander-wo%C5%BAniak1/"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Kacper Tomczyk",
+    "role": {
+      "en": "Treasurer",
+      "pl": "Skarbnik koła"
+    },
+    "photoUrl": "kacper-tomczyk.jpg",
+    "links": {
+      "github": "https://github.com/therockey",
+      "linkedin": "https://www.linkedin.com/in/kacper-tomczyk-b585a4273/"
+    }
+  }
+]

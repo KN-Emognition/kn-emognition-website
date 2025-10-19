@@ -7,6 +7,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --navbar-height: 74px;
 }
 
 *,
@@ -18,4 +19,113 @@
 
 .p-menubar-end {
   margin-left: auto;
+}
+
+.p-submenu-list {
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.scale-on-hover {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.move-down-on-hover {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(5px);
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.min-full-height {
+  min-height: calc(100vh - var(--navbar-height, 74px));
+}
+
+.full-height {
+  height: calc(100vh - var(--navbar-height, 74px));
+}
+
+main {
+  padding-top: var(--navbar-height, 74px);
+  min-height: calc(100vh - var(--navbar-height, 74px));
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  --bg-blur: 10px;
+  background-image: url('/src/assets/img/contact-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Blur the background by rendering it in a pseudo-element and applying filter */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: 120%; /* prevents edges showing when blurred */
+  background-position: center;
+  filter: blur(var(--bg-blur));
+  transform: scale(1.04);
+  z-index: 0;
+}
+
+/* Content sits above the blurred background */
+.hero .content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  color: #fff;
+}
+
+/* Backdrop blur (glass) - blurs what is behind this element.
+   Note: requires browser support and the element must be at least semi-transparent. */
+.glass {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1rem;
+  display: inline-block;
+}
+
+/* Optional: fallback for browsers without backdrop-filter */
+.no-backdrop .glass {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.emognition-gradient {
+  background: linear-gradient(to bottom, #b31d1d, #2b0a3d);
+  color: white;
+}
+
+.emognition-gradient-up {
+  background: linear-gradient(to top, #b31d1d, #2b0a3d);
+  color: white;
+}
+
+.emognition-gradient-right {
+  background: linear-gradient(to right, #b31d1d, #2b0a3d);
+  color: white;
+}
+
+.emognition-gradient-left {
+  background: linear-gradient(to left, #b31d1d, #2b0a3d);
+  color: white;
 }

@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 import { Dropdown, type DropdownChangeEvent, type DropdownProps } from 'primereact/dropdown'
 import { Menubar } from 'primereact/menubar'
 import { useState } from 'react'
-
+import logoWide from '@/assets/img/logo-wide.svg'
 export default function Navbar() {
   const navigate = useNavigate()
   const { t, i18n } = useTranslation()
@@ -32,7 +32,7 @@ export default function Navbar() {
         <div className="flex align-items-center">
           <img
             alt={option.label}
-            src="https://primefaces.org/cdn/primereact/images/flag/flag_placeholder.png"
+            src="https://primefaces.org/cdn/primereact/images/flag/flag_placeholder.png" // TODO use local asset
             className={`mr-2 flag flag-${option.flag_code.toLowerCase()}`}
             style={{ width: '18px' }}
           />
@@ -49,7 +49,7 @@ export default function Navbar() {
       <div className="flex align-items-center">
         <img
           alt={option.label}
-          src="https://primefaces.org/cdn/primereact/images/flag/flag_placeholder.png"
+          src="https://primefaces.org/cdn/primereact/images/flag/flag_placeholder.png" // TODO use local asset
           className={`mr-2 flag flag-${option.flag_code.toLowerCase()}`}
           style={{ width: '18px' }}
         />
@@ -67,13 +67,13 @@ export default function Navbar() {
         duration={600}
         offset={-70}
         onClick={() => handleNavClick(item!.url as string)}
-        className="flex align-items-center p-menuitem-link"
+        className="flex align-items-center p-menuitem-link bg-gray-100 mx-1 border-1 border-round border-gray-300 hover:border-blue-500 hover:shadow-0 transition-all transition-ease-in-out transition-duration-300"
       >
         <span className={item.icon} />
         <span className="mx-2">{t(item.label ?? '')}</span>
       </ScrollLink>
     ) : (
-      <div className="flex align-items-center p-menuitem-link">
+      <div className="flex align-items-center p-menuitem-link bg-gray-100 mx-1 border-1 border-round border-gray-300 hover:border-blue-500 transition-all transition-ease-in-out transition-duration-300">
         <span className={item.icon} />
         <span className="mx-2">{t(item.label ?? '')}</span>
       </div>
@@ -87,6 +87,12 @@ export default function Navbar() {
       url: 'home',
     },
     {
+      label: 'navigation.about',
+      icon: 'pi pi-info-circle',
+      template: itemRenderer,
+      url: 'about',
+    },
+    {
       label: 'navigation.team',
       icon: 'pi pi-users',
       template: itemRenderer,
@@ -98,12 +104,12 @@ export default function Navbar() {
       template: itemRenderer,
       url: 'recruitment',
     },
-    {
-      label: 'navigation.contact',
-      icon: 'pi pi-envelope',
-      template: itemRenderer,
-      url: 'contact',
-    },
+    // {
+    //   label: 'navigation.contact',
+    //   icon: 'pi pi-envelope',
+    //   template: itemRenderer,
+    //   url: 'contact',
+    // },
     {
       label: 'navigation.projects',
       icon: 'pi pi-search',
@@ -118,7 +124,7 @@ export default function Navbar() {
     },
   ]
 
-  const start = <img alt="logo" src="/logo-wide.svg" height="50" className="mr-2"></img>
+  const start = <img alt="logo" src={logoWide} height="50" className="mr-4"></img>
   const end = (
     <div className="flex align-items-center gap-2">
       <Dropdown
@@ -129,7 +135,7 @@ export default function Navbar() {
         placeholder="Select a Country"
         valueTemplate={selectedCountryTemplate}
         itemTemplate={countryOptionTemplate}
-        className="md:w-14rem"
+        className="md:w-14rem bg-gray-100"
       />
     </div>
   )
@@ -140,7 +146,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full shadow flex justify-center z-5">
-      <Menubar model={items} start={start} end={end} className="w-full bg-white" />
+      <Menubar model={items} start={start} end={end} className="w-full bg-gray-50" />
     </nav>
   )
 }

@@ -6,20 +6,27 @@
   },
   "navigation": {
     "home": "Landing Page",
+    "about": "About Us",
     "team": "Team",
     "projects": "Projects",
     "recruitment": "Recruitment",
     "contact": "Contact"
   },
+  "socials": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "facebook": "Facebook",
+    "instagram": "Instagram"
+  },
   "pages": {
     "landing": {
-      "heading": "Welcome to Knemognition",
-      "lead": "We are a student organization focused on innovative engineering projects and community-driven learning.",
+      "heading": "Welcome to KN Emognition",
+      "lead": "Where emotions meet algorithms.",
       "cta": "Discover what we are building together."
     },
     "team": {
       "heading": "Our Team",
-      "lead": "Meet the passionate students who coordinate research, events, and partnerships within Knemognition."
+      "lead": "Meet the passionate students who coordinate research, events, and partnerships within KN Emognition."
     },
     "projects": {
       "heading": "Projects",
@@ -32,6 +39,10 @@
     "contact": {
       "heading": "Contact",
       "lead": "Reach out for collaboration opportunities, event invitations, or general inquiries."
+    },
+    "aboutus": {
+      "heading": "O nas",
+      "lead": "Dowiedz się więcej o misji, wizji i wartościach KN Emognition oraz o tym, jak kształtujemy przyszłość interakcji człowiek-komputer."
     },
     "notFound": {
       "heading": "Page Not Found",

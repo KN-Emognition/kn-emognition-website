@@ -4,9 +4,11 @@ const RecruitmentPage = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="h-screen flex flex-column justify-content-center align-items-center bg-red-200">
-      <h1>{t('pages.recruitment.heading')}</h1>
-      <p className="page-lead">{t('pages.recruitment.lead')}</p>
+    <section className="hero  full-height flex flex-column justify-content-center align-items-center bg-red-200">
+      <div className="content">
+        <h1>{t('pages.recruitment.heading')}</h1>
+        <p className="page-lead">{t('pages.recruitment.lead')}</p>
+      </div>
     </section>
   )
 }

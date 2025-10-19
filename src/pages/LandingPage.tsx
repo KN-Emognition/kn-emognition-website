@@ -1,13 +1,25 @@
 import { useTranslation } from 'react-i18next'
+import { useNavigate } from 'react-router-dom'
 
 const LandingPage = () => {
   const { t } = useTranslation()
+  const navigate = useNavigate()
+
+  const handleScroll = () => {
+    navigate('/about')
+  }
 
   return (
-    <section className="h-screen flex flex-column justify-content-center align-items-center bg-blue-100">
+    <section className="full-height flex flex-column justify-content-center align-items-center fadein animation-duration-1500 transition-ease-in">
+      <img src="/src/assets/img/logo-small.svg" className="w-20rem" alt="logo" />
       <h1>{t('pages.landing.heading')}</h1>
-      <p className="page-lead">{t('pages.landing.lead')}</p>
-      <p className="page-cta">{t('pages.landing.cta')}</p>
+      <h2 className="page-lead font-italic font-normal">{t('pages.landing.lead')}</h2>
+      <div onClick={handleScroll} className="absolute bottom-0 cursor-pointer">
+        <div className="flex flex-column align-items-center text-gray-600 py-2 gap-3 move-down-on-hover">
+          <p className="text-lg mb-1">{t('pages.landing.cta')}</p>
+          <i className="text-2xl mb-3 text-color-secondary pi pi-arrow-down"></i>
+        </div>
+      </div>
     </section>
   )
 }

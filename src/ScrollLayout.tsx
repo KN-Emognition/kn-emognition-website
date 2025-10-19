@@ -7,38 +7,55 @@ import 'primeicons/primeicons.css' //icons
 import 'primeflex/primeflex.css'
 import 'primeflex/themes/primeone-light.css'
 import LandingPage from './pages/LandingPage.tsx'
-import Navbar from './components/Navbar.tsx'
-import ContactPage from './pages/ContactPage.tsx'
 import TeamPage from './pages/TeamPage.tsx'
-import RecruitmentPage from './pages/RecruitmentPage.tsx' // flex
+import RecruitmentPage from './pages/RecruitmentPage.tsx'
+import AboutUsPage from './pages/AboutUsPage.tsx'
 
 export function ScrollLayout() {
   const location = useLocation()
 
   useEffect(() => {
+    const getNavbarHeight = () => {
+      const cssVar = getComputedStyle(document.documentElement)
+        .getPropertyValue('--navbar-height')
+        .trim()
+      if (cssVar) {
+        const px = parseInt(cssVar.replace('px', ''), 10)
+        if (!isNaN(px)) return px
+      }
+      const nav = document.querySelector('#site-navbar') as HTMLElement | null
+      return nav ? nav.offsetHeight : 0
+    }
+
+    const offset = -getNavbarHeight()
+
+    console.log(`Scrolling to section: ${location.pathname}, with offset: ${offset}`)
+
     const section = location.pathname.replace('/', '') || 'home'
     scroller.scrollTo(section, {
       duration: 600,
       smooth: 'easeInOutQuart',
-      offset: 0,
+      offset: offset,
     })
   }, [location])
 
   return (
     <>
-      <Navbar />
-      <Element name="home">
+      <Element name="home" className="min-full-height">
         <LandingPage />
       </Element>
-      <Element name="team">
+      <Element name="about" className="min-full-height">
+        <AboutUsPage />
+      </Element>
+      <Element name="team" className="min-full-height">
         <TeamPage />
       </Element>
-      <Element name="recruitment">
+      <Element name="recruitment" className="min-full-height">
         <RecruitmentPage />
       </Element>
-      <Element name="contact">
-        <ContactPage />
-      </Element>
+      {/*<Element name="contact" className="min-full-height">*/}
+      {/*  <ContactPage />*/}
+      {/*</Element>*/}
     </>
   )
 }
