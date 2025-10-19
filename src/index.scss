@@ -80,6 +80,7 @@ main {
   background-image: inherit;
   background-size: 120%; /* prevents edges showing when blurred */
   background-position: center;
+  background-size: cover;
   filter: blur(var(--bg-blur));
   transform: scale(1.04);
   z-index: 0;
