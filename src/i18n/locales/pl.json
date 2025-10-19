@@ -21,7 +21,7 @@
   "pages": {
     "landing": {
       "heading": "Witamy w KN Emognition",
-      "lead": "Gdzie emocje spotykają się z algorytmami.",
+      "lead": "Jesteśmy organizacją łączącą pasję do nowoczesnych technologii z chęcią tworzenia realnych innowacji. Działamy na styku różnych dziedzin nauki, koncentrując się na rozwoju i wdrażaniu rozwiązań opartych na sztucznej inteligencji. Stawiamy na interdyscyplinarność, kreatywność i współpracę. Wierzymy, że połączenie technologii i ludzkiego potencjału napędza prawdziwy postęp.",
       "cta": "Poznaj, nad czym wspólnie pracujemy."
     },
     "team": {
@@ -30,7 +30,16 @@
     },
     "projects": {
       "heading": "Projekty",
-      "lead": "Odkryj obecne i zakończone inicjatywy, łączące technologię, kreatywność i wpływ społeczny."
+      "lead": "Odkryj bieżące i zakończone inicjatywy łączące technologię, kreatywność i wpływ społeczny.",
+      "items": [
+        {
+          "photo": "",
+          "title": "Projekt HeartAuth",
+          "short_description": "Autentykacja użytkowników za pomocą sygnałów EKG",
+          "description": "HeartAuth to system biometrycznego uwierzytelniania wykorzystujący unikalny rytm pracy serca jako klucz do potwierdzania tożsamości. Zamiast haseł czy kodów system analizuje indywidualny sygnał EKG, tworząc nowy sposób logowania. HeartAuth bezproblemowo integruje się z istniejącymi systemami zarządzania tożsamością, takimi jak Keycloak, i nie wymaga dodatkowej infrastruktury. Dzięki standardowi OAuth2 umożliwia łatwą integrację z dowolnymi aplikacjami i usługami. To nowa era w cyfrowym bezpieczeństwie — Twoje serce staje się Twoim hasłem.",
+          "repo": ""
+        }
+      ]
     },
     "recruitment": {
       "heading": "Rekrutacja",
