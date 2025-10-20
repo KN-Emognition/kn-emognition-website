@@ -21,7 +21,7 @@
   "pages": {
     "landing": {
       "heading": "Welcome to KN Emognition",
-      "lead": "We are an organization that combines a passion for modern technologies with a desire to create real innovation. We operate at the intersection of various scientific fields, focusing on the development and implementation of AI-driven solutions. We value interdisciplinarity, creativity, and collaboration. We believe that the fusion of technology and human potential drives true progress.",
+      "lead": "Where emotions meet algorithms.",
       "cta": "Discover what we are building together."
     },
     "team": {
@@ -51,7 +51,7 @@
     },
     "aboutus": {
       "heading": "O nas",
-      "lead": "Dowiedz się więcej o misji, wizji i wartościach KN Emognition oraz o tym, jak kształtujemy przyszłość interakcji człowiek-komputer."
+      "lead": "We are an organization that combines a passion for modern technologies with a desire to create real innovations. We operate at the intersection of various fields of science, focusing on the development and implementation of solutions based on artificial intelligence. We emphasize interdisciplinarity, creativity, and cooperation. We believe that the combination of technology and human potential drives real progress."
     },
     "notFound": {
       "heading": "Page Not Found",

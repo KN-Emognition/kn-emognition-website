@@ -16,7 +16,7 @@ const SocialLink = ({
     target="_blank"
     rel="noopener noreferrer"
     className={classNames(
-      'p-button p-component p-button-outlined flex align-items-center gap-2 h-2rem w-2rem p-0 justify-content-center glass bg-black-alpha-20',
+      'p-button p-component p-button-outlined flex align-items-center gap-2 h-2rem w-2rem p-0 justify-content-center glass glass-link bg-black-alpha-20',
       colorClass,
     )}
     aria-label={label}

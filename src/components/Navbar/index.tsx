@@ -49,7 +49,7 @@ export default function Navbar() {
       <div className="flex align-items-center">
         <img
           alt={option.label}
-          src="https://primefaces.org/cdn/primereact/images/flag/flag_placeholder.png" // TODO use local asset
+          src="https://primefaces.org/cdn/primereact/images/flag/flag_placeholder.png"
           className={`mr-2 flag flag-${option.flag_code.toLowerCase()}`}
           style={{ width: '18px' }}
         />
@@ -67,15 +67,15 @@ export default function Navbar() {
         duration={600}
         offset={-70}
         onClick={() => handleNavClick(item!.url as string)}
-        className="flex align-items-center p-menuitem-link bg-gray-100 mx-1 border-1 border-round border-gray-300 hover:border-blue-500 hover:shadow-0 transition-all transition-ease-in-out transition-duration-300"
+        className="flex align-items-center p-menuitem-link bg-white-alpha-10 text-white mx-1 border-1 border-round border-white-alpha-30 hover:border-blue-500"
       >
         <span className={item.icon} />
-        <span className="mx-2">{t(item.label ?? '')}</span>
+        <span className="ml-2">{t(item.label ?? '')}</span>
       </ScrollLink>
     ) : (
-      <div className="flex align-items-center p-menuitem-link bg-gray-100 mx-1 border-1 border-round border-gray-300 hover:border-blue-500 transition-all transition-ease-in-out transition-duration-300">
+      <div className="flex align-items-center p-menuitem-link bg-white-alpha-10 text-white mx-1 border-1 border-round border-white-alpha-30 hover:border-blue-500 transition-all transition-ease-in-out transition-duration-300">
         <span className={item.icon} />
-        <span className="mx-2">{t(item.label ?? '')}</span>
+        <span className="ml-2">{t(item.label ?? '')}</span>
       </div>
     )
 
@@ -104,12 +104,12 @@ export default function Navbar() {
       template: itemRenderer,
       url: 'recruitment',
     },
-    // {
-    //   label: 'navigation.contact',
-    //   icon: 'pi pi-envelope',
-    //   template: itemRenderer,
-    //   url: 'contact',
-    // },
+    {
+      label: 'navigation.contact',
+      icon: 'pi pi-envelope',
+      template: itemRenderer,
+      url: 'contact',
+    },
     {
       label: 'navigation.projects',
       icon: 'pi pi-search',
@@ -124,9 +124,16 @@ export default function Navbar() {
     },
   ]
 
-  const start = <img alt="logo" src={logoWide} height="50" className="mr-4"></img>
+  const start = (
+    <img
+      alt="logo"
+      src={logoWide}
+      height="50"
+      className="mr-4 bg-white-alpha-50 p-1 border-round"
+    ></img>
+  )
   const end = (
-    <div className="flex align-items-center gap-2">
+    <div className="flex align-items-center gap-2 text-white">
       <Dropdown
         value={selectedCountry}
         onChange={handleCountryChange}
@@ -135,7 +142,7 @@ export default function Navbar() {
         placeholder="Select a Country"
         valueTemplate={selectedCountryTemplate}
         itemTemplate={countryOptionTemplate}
-        className="md:w-14rem bg-gray-100"
+        className="text-white md:w-14rem bg-white-alpha-10 border-white-alpha-30 hover:border-blue-500"
       />
     </div>
   )
@@ -145,8 +152,8 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 w-full shadow flex justify-center z-5">
-      <Menubar model={items} start={start} end={end} className="w-full bg-gray-50" />
+    <nav className="fixed top-0 left-0 w-full shadow flex justify-center z-5 bg-transparent">
+      <Menubar model={items} start={start} end={end} className="w-full glass bg-black-alpha-20" />
     </nav>
   )
 }

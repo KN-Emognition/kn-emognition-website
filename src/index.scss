@@ -8,6 +8,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --navbar-height: 74px;
+  --emog-speed: 30s;
+  --emog-ease: ease-in-out;
 }
 
 *,
@@ -17,6 +19,13 @@
   margin: 0;
 }
 
+.p-menubar-start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .p-menubar-end {
   margin-left: auto;
 }
@@ -24,6 +33,53 @@
 .p-submenu-list {
   padding: 0.5rem;
   border-radius: 8px;
+}
+
+.p-dropdown-label {
+  color: #fff !important;
+}
+
+.p-dropdown-trigger {
+  color: #fff !important;
+}
+
+.p-menubar-root-list {
+  background-color: transparent !important;
+}
+
+/* Disable color-related hover/focus/active changes for PrimeReact menu items */
+.p-menuitem-content,
+.p-menuitem-content {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+.p-menubar {
+  border: none !important;
+}
+
+/* Keep the same appearance on hover/focus/active */
+.p-menuitem-content:hover,
+.p-menuitem-content:focus,
+.p-menuitem-content:active {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+/* Ensure icons follow text color, no fill/stroke changes on hover */
+.p-menuitem-content i,
+.p-menuitem-content svg {
+  color: inherit !important;
+  fill: currentColor !important;
+  stroke: none !important;
 }
 
 .scale-on-hover {
@@ -59,17 +115,33 @@ h1 {
 }
 
 main {
-  padding-top: var(--navbar-height, 74px);
+  //padding-top: var(--navbar-height, 74px);
   min-height: calc(100vh - var(--navbar-height, 74px));
 }
 
 .hero {
   position: relative;
   overflow: hidden;
-  --bg-blur: 10px;
-  background-image: url('/src/assets/img/contact-bg.jpg');
   background-size: cover;
   background-position: center;
+
+  .content {
+    position: relative;
+    z-index: 2 !important; /* content sits above the overlay */
+  }
+}
+
+.hero-recruitment {
+  @extend .hero;
+  background-image: url('/src/assets/img/recruitment-bg.jpg');
+  --bg-dim: rgba(0, 0, 0, 0.55);
+  --bg-blur: 10px;
+}
+
+.hero-aboutus {
+  @extend .hero;
+  background-image: url('/src/assets/img/aboutus-bg.jpg');
+  --bg-blur: 0px;
 }
 
 /* Blur the background by rendering it in a pseudo-element and applying filter */
@@ -80,10 +152,18 @@ main {
   background-image: inherit;
   background-size: 120%; /* prevents edges showing when blurred */
   background-position: center;
-  background-size: cover;
   filter: blur(var(--bg-blur));
   transform: scale(1.04);
   z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--bg-dim);
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* Content sits above the blurred background */
@@ -98,8 +178,11 @@ main {
    Note: requires browser support and the element must be at least semi-transparent. */
 .glass {
   background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-link {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
   padding: 1rem;
@@ -111,9 +194,40 @@ main {
   background: rgba(0, 0, 0, 0.35);
 }
 
+@keyframes emognitionShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .emognition-gradient {
-  background: linear-gradient(to bottom, #b31d1d, #2b0a3d);
-  color: white;
+  background: linear-gradient(30deg, #b31d1d 0%, #2b0a3d 35%, #1b8aa6 70%, #ffc857 100%);
+  background-size: 300% 300%;
+  animation: emognitionShift var(--emog-speed) var(--emog-ease) infinite;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  /* subtle dimmer so content remains readable */
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--emog-overlay);
+    pointer-events: none;
+  }
 }
 
 .emognition-gradient-up {

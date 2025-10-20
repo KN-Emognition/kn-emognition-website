@@ -1,13 +1,19 @@
 import { useTranslation } from 'react-i18next'
+import ButtonMailto from '@/components/ButtonMailto.tsx'
 
 const ContactPage = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="hero full-height flex flex-column justify-content-center align-items-center bg-blue-100">
-      <div className="content">
+    <section className="hero-recruitment h-screen flex flex-column justify-content-center align-items-center bg-blue-100 w-screen">
+      <div className="content flex-column align-items-center justify-content-center text-center">
         <h1>{t('pages.contact.heading')}</h1>
-        <p className="page-lead">{t('pages.contact.lead')}</p>
+        <h2 className="page-lead font-normal py-5 text-justify">{t('pages.contact.lead')}</h2>
+        <ButtonMailto
+          mailto="mailto:kn.emognition@pwr.edu.pl"
+          label="kn.emognition@pwr.edu.pl"
+          className="font-bold text-4xl text-white ="
+        />
       </div>
     </section>
   )

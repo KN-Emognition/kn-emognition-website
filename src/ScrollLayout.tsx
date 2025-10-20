@@ -10,6 +10,7 @@ import LandingPage from './pages/LandingPage.tsx'
 import TeamPage from './pages/TeamPage.tsx'
 import RecruitmentPage from './pages/RecruitmentPage.tsx'
 import AboutUsPage from './pages/AboutUsPage.tsx'
+import ContactPage from '@/pages/ContactPage.tsx'
 
 export function ScrollLayout() {
   const location = useLocation()
@@ -35,7 +36,8 @@ export function ScrollLayout() {
     scroller.scrollTo(section, {
       duration: 600,
       smooth: 'easeInOutQuart',
-      offset: offset,
+      // offset: offset,
+      offset: 0,
     })
   }, [location])
 
@@ -50,12 +52,13 @@ export function ScrollLayout() {
       <Element name="team" className="min-full-height">
         <TeamPage />
       </Element>
+      <hr className="w-10 border-t-2 border-gray-200 my-3" />
       <Element name="recruitment" className="min-full-height">
         <RecruitmentPage />
       </Element>
-      {/*<Element name="contact" className="min-full-height">*/}
-      {/*  <ContactPage />*/}
-      {/*</Element>*/}
+      <Element name="contact" className="min-full-height">
+        <ContactPage />
+      </Element>
     </>
   )
 }

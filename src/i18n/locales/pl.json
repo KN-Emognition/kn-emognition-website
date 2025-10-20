@@ -21,7 +21,7 @@
   "pages": {
     "landing": {
       "heading": "Witamy w KN Emognition",
-      "lead": "Jesteśmy organizacją łączącą pasję do nowoczesnych technologii z chęcią tworzenia realnych innowacji. Działamy na styku różnych dziedzin nauki, koncentrując się na rozwoju i wdrażaniu rozwiązań opartych na sztucznej inteligencji. Stawiamy na interdyscyplinarność, kreatywność i współpracę. Wierzymy, że połączenie technologii i ludzkiego potencjału napędza prawdziwy postęp.",
+      "lead": "Gdzie emocje spotykają się z algorytmami.",
       "cta": "Poznaj, nad czym wspólnie pracujemy."
     },
     "team": {
@@ -43,7 +43,9 @@
     },
     "recruitment": {
       "heading": "Rekrutacja",
-      "lead": "Chcesz dołączyć do naszego zespołu? Rekrutacja do KN Emognition jest teraz otwarta - wypełnij tylko formularz zgłoszeniowy, a my zajmiemy się resztą!"
+      "lead": "Chcesz dołączyć do naszego zespołu? Rekrutacja do KN Emognition jest teraz otwarta - wypełnij tylko formularz zgłoszeniowy, a my zajmiemy się resztą!",
+      "lead2": "Dołącz do nas, rozwijaj kompetencje, współpracuj z rówieśnikami i twórz rozwiązania z prawdziwym znaczeniem.",
+      "cta": "Zapisz się"
     },
     "contact": {
       "heading": "Kontakt",
@@ -51,7 +53,7 @@
     },
     "aboutus": {
       "heading": "O nas",
-      "lead": "Dowiedz się więcej o misji, wizji i wartościach KN Emognition oraz o tym, jak kształtujemy przyszłość interakcji człowiek-komputer."
+      "lead": "Jesteśmy organizacją łączącą pasję do nowoczesnych technologii z chęcią tworzenia realnych innowacji. Działamy na styku różnych dziedzin nauki, koncentrując się na rozwoju i wdrażaniu rozwiązań opartych na sztucznej inteligencji. Stawiamy na interdyscyplinarność, kreatywność i współpracę. Wierzymy, że połączenie technologii i ludzkiego potencjału napędza prawdziwy postęp."
     },
     "notFound": {
       "heading": "Nie znaleziono strony",

@@ -1,13 +1,16 @@
 import { useTranslation } from 'react-i18next'
+import { Card } from 'primereact/card'
 
 const AboutUsPage = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="full-height flex flex-column justify-content-center text-center align-items-center bg-blue-200">
-      <div>
-        <h1>{t('pages.aboutus.heading')}</h1>
-        <p className="page-lead">{t('pages.aboutus.lead')}</p>
+    <section className="hero-aboutus h-screen flex flex-column justify-content-center align-items-center text-center w-screen">
+      <div className="content flex align-items-center justify-content-center">
+        <Card className="w-8 bg-black-alpha-20 text-white p-5">
+          <h1>{t('pages.aboutus.heading')}</h1>
+          <h2 className="page-lead pt-5 text-justify font-normal">{t('pages.aboutus.lead')}</h2>
+        </Card>
       </div>
     </section>
   )

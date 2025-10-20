@@ -4,7 +4,7 @@ const NotFoundPage = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="full-height page">
+    <section className="full-height w-screen page">
       <h1>{t('pages.notFound.heading')}</h1>
       <p className="page-lead">{t('pages.notFound.lead')}</p>
     </section>
