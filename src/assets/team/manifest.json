@@ -1,54 +1,88 @@
-[
-  {
-    "id": 1,
-    "name": "Jan Szyndlarewicz",
-    "role": {
-      "en": "President",
-      "pl": "Prezes koła"
+{
+  "sections": [
+    {
+      "section_name": {
+        "en": "Management Board",
+        "pl": "Zarząd"
+      },
+      "members": [
+        {
+          "id": 1,
+          "name": "Jan Szyndlarewicz",
+          "role": {
+            "en": "President",
+            "pl": "Prezes koła"
+          },
+          "photoUrl": "jan-szyndlarewicz-2.jpg",
+          "links": {
+            "github": "https://github.com/JanSzyndlarewicz",
+            "linkedin": "https://www.linkedin.com/in/jan-szyndlarewicz/"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Karol Zając",
+          "role": {
+            "en": "Vice-President",
+            "pl": "Wiceprezes koła"
+          },
+          "photoUrl": "karol-zajac.jpg",
+          "links": {
+            "github": "https://github.com/poziomk3",
+            "linkedin": "https://www.linkedin.com/in/p3-karol-zajac"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Aleksander Woźniak",
+          "role": {
+            "en": "Vice-President",
+            "pl": "Wiceprezes koła"
+          },
+          "photoUrl": "aleksander-wozniak.jpg",
+          "links": {
+            "github": "https://github.com/0leslaw",
+            "linkedin": "https://www.linkedin.com/in/aleksander-wo%C5%BAniak1/"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Kacper Tomczyk",
+          "role": {
+            "en": "Treasurer",
+            "pl": "Skarbnik koła"
+          },
+          "photoUrl": "kacper-tomczyk.jpg",
+          "links": {
+            "github": "https://github.com/therockey",
+            "linkedin": "https://www.linkedin.com/in/kacper-tomczyk-b585a4273/"
+          }
+        }
+      ]
     },
-    "photoUrl": "jan-szyndlarewicz.jpg",
-    "links": {
-      "github": "https://github.com/JanSzyndlarewicz",
-      "linkedin": "https://www.linkedin.com/in/jan-szyndlarewicz/"
+    {
+      "section_name": {
+        "en": "Team Members",
+        "pl": "Członkowie zespołu"
+      },
+      "members": [
+        {
+          "id": 5,
+          "name": "Mateusz Bukowski",
+          "photoUrl": "mateusz-bukowski.jpg",
+          "links": {
+            "github": "https://github.com/MatiBukowski"
+          }
+        },
+        {
+          "id": 6,
+          "name": "Jakub Brzozowski",
+          "photoUrl": "jakub-brzozowski.jpg",
+          "links": {
+            "github": "https://github.com/Bircheses"
+          }
+        }
+      ]
     }
-  },
-  {
-    "id": 2,
-    "name": "Karol Zając",
-    "role": {
-      "en": "Vice-President",
-      "pl": "Wiceprezes koła"
-    },
-    "photoUrl": "karol-zajac.jpg",
-    "links": {
-      "github": "https://github.com/poziomk3",
-      "linkedin": "https://www.linkedin.com/in/p3-karol-zajac"
-    }
-  },
-  {
-    "id": 3,
-    "name": "Aleksander Woźniak",
-    "role": {
-      "en": "Vice-President",
-      "pl": "Wiceprezes koła"
-    },
-    "photoUrl": "aleksander-wozniak.jpg",
-    "links": {
-      "github": "https://github.com/0leslaw",
-      "linkedin": "https://www.linkedin.com/in/aleksander-wo%C5%BAniak1/"
-    }
-  },
-  {
-    "id": 4,
-    "name": "Kacper Tomczyk",
-    "role": {
-      "en": "Treasurer",
-      "pl": "Skarbnik koła"
-    },
-    "photoUrl": "kacper-tomczyk.jpg",
-    "links": {
-      "github": "https://github.com/therockey",
-      "linkedin": "https://www.linkedin.com/in/kacper-tomczyk-b585a4273/"
-    }
-  }
-]
+  ]
+}

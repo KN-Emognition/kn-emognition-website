@@ -1,7 +1,7 @@
 export type TeamMember = {
   id: number
   name: string
-  role: {
+  role?: {
     pl: string
     en: string
   }

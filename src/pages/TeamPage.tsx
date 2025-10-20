@@ -7,7 +7,7 @@ const TeamPage = () => {
   return (
     <section
       id="team-section"
-      className="flex flex-column justify-content-center align-items-center gap-3 py-5 min-full-height px-4 w-screen"
+      className="flex flex-column justify-content-center align-items-center gap-3 py-8 min-full-height px-4 w-screen"
     >
       <div className="flex flex-column flex-wrap justify-center align-items-center text-center">
         <h1>{t('pages.team.heading')}</h1>

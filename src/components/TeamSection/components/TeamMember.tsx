@@ -17,7 +17,7 @@ const TeamMember = memo(({ member }: Props) => {
   const lang = useLang()
   const { t } = useTranslation()
 
-  const roleText = pick(member.role, lang)
+  const roleText = member.role ? pick(member.role, lang) : null
   const imgSrc = useMemo(
     () => (member.photoUrl ? resolveTeamMemberImg(member.photoUrl) : undefined),
     [member.photoUrl],

@@ -29,28 +29,26 @@
       "lead": "Meet the passionate students who coordinate research, events, and partnerships within KN Emognition."
     },
     "projects": {
-      "heading": "Projects",
-      "lead": "Discover ongoing and completed initiatives that combine technology, creativity, and social impact.",
-      "items": [
-        {
-          "photo": "",
-          "title": "HeartAuth Project",
-          "short_description": "User authentication using ECG signals",
-          "description": "HeartAuth is a biometric authentication system that uses the unique rhythm of the human heart as a key to verify identity. Instead of passwords or codes, the system analyzes an individual’s ECG signal, introducing a new way of logging in. HeartAuth seamlessly integrates with existing identity management systems such as Keycloak and requires no additional infrastructure. Thanks to the OAuth2 standard, it enables easy integration with any applications and services. It’s a new era of digital security — your heart becomes your password.",
-          "repo": ""
-        }
-      ]
+      "heartauth": {
+        "photo": "",
+        "title": "HeartAuth Project",
+        "short_description": "User authentication using ECG signals",
+        "description": "HeartAuth is a biometric authentication system that uses the unique rhythm of the human heart as a key to verify identity. Instead of passwords or codes, the system analyzes an individual’s ECG signal, introducing a new way of logging in. HeartAuth seamlessly integrates with existing identity management systems such as Keycloak and requires no additional infrastructure. Thanks to the OAuth2 standard, it enables easy integration with any applications and services. It’s a new era of digital security — your heart becomes your password.",
+        "repo": ""
+      }
     },
     "recruitment": {
       "heading": "Recruitment",
-      "lead": "Join us to develop your skills, collaborate with peers, and deliver meaningful solutions."
+      "lead": "Join us to develop your skills, collaborate with peers, and deliver meaningful solutions.",
+      "lead2": "Join us, develop your skills, collaborate with your peers, and create solutions that truly matter.",
+      "cta": "Sign up"
     },
     "contact": {
       "heading": "Contact",
       "lead": "Reach out for collaboration opportunities, event invitations, or general inquiries."
     },
     "aboutus": {
-      "heading": "O nas",
+      "heading": "About us",
       "lead": "We are an organization that combines a passion for modern technologies with a desire to create real innovations. We operate at the intersection of various fields of science, focusing on the development and implementation of solutions based on artificial intelligence. We emphasize interdisciplinarity, creativity, and cooperation. We believe that the combination of technology and human potential drives real progress."
     },
     "notFound": {
