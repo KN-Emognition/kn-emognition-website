@@ -68,6 +68,14 @@
       "members": [
         {
           "id": 5,
+          "name": "Jakub Brzozowski",
+          "photoUrl": "jakub-brzozowski.jpg",
+          "links": {
+            "github": "https://github.com/Bircheses"
+          }
+        },
+        {
+          "id": 6,
           "name": "Mateusz Bukowski",
           "photoUrl": "mateusz-bukowski.jpg",
           "links": {
@@ -75,11 +83,19 @@
           }
         },
         {
-          "id": 6,
-          "name": "Jakub Brzozowski",
-          "photoUrl": "jakub-brzozowski.jpg",
+          "id": 7,
+          "name": "Mateusz Wojciechowski",
+          "photoUrl": "mateusz-wojciechowski.jpg",
           "links": {
-            "github": "https://github.com/Bircheses"
+            "linkedin": "https://www.linkedin.com/in/mateusz-wojciechowski-72aa04276/"
+          }
+        },
+        {
+          "id": 8,
+          "name": "Nikodem Świerkowski",
+          "photoUrl": "nikodem-swierkowski.jpg",
+          "links": {
+            "linkedin": "https://www.linkedin.com/in/nikodem-swierkowski/"
           }
         }
       ]

@@ -71,7 +71,9 @@ const TeamMember = memo(({ member }: Props) => {
       </div>
 
       <div className="flex flex-column align-items-center px-2 pt-1">
-        <span className="font-semibold text-base mb-1 py-1">{member.name}</span>
+        <div className="flex flex-column align-items-center justify-content-center text-center h-4rem">
+          <span className="font-semibold text-base mb-1 py-1">{member.name}</span>
+        </div>
         {roleText && (
           <Tag
             value={roleText}
@@ -83,7 +85,7 @@ const TeamMember = memo(({ member }: Props) => {
 
         {hasSocials && (
           <>
-            <hr className="w-8 border-t-2 border-gray-200 my-3" />
+            <hr className="w-8 border-t-2 border-gray-200 my-2" />
             <div className="flex gap-2 justify-content-center mt-1">
               {member.links?.linkedin && (
                 <SocialLink
