@@ -14,23 +14,23 @@ export const router = createBrowserRouter([
         element: <ScrollLayout />,
       },
       {
-        path: 'about',
+        path: '/about',
         element: <ScrollLayout />,
       },
       {
-        path: 'team',
+        path: '/team',
         element: <ScrollLayout />,
       },
       {
-        path: 'recruitment',
+        path: '/recruitment',
         element: <ScrollLayout />,
       },
       {
-        path: 'contact',
+        path: '/contact',
         element: <ScrollLayout />,
       },
       {
-        path: 'projects/heartauth',
+        path: '/projects/heartauth',
         element: <HeartAuth />,
       },
       {
