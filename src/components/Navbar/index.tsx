@@ -18,6 +18,10 @@ export default function Navbar() {
     languages.find((lang) => lang.code === currentLanguage) || languages[0],
   )
 
+  const handleNavClick = (section: string) => {
+    navigate(section === 'home' ? '/' : `/${section}`)
+  }
+
   const handleCountryChange = (e: DropdownChangeEvent) => {
     setSelectedCountry(e.value)
     i18n.changeLanguage(e.value.code).then(() => {})
@@ -81,12 +85,6 @@ export default function Navbar() {
 
   const items: MenuItem[] = [
     {
-      label: 'navigation.home',
-      icon: 'pi pi-home',
-      template: itemRenderer,
-      url: 'home',
-    },
-    {
       label: 'navigation.about',
       icon: 'pi pi-info-circle',
       template: itemRenderer,
@@ -125,12 +123,22 @@ export default function Navbar() {
   ]
 
   const start = (
-    <img
-      alt="logo"
-      src={logoWide}
-      height="50"
-      className="mr-4 bg-white-alpha-50 p-1 border-round"
-    ></img>
+    <ScrollLink
+      key="home"
+      to="home"
+      smooth={true}
+      duration={600}
+      offset={-70}
+      onClick={() => handleNavClick('home')}
+      className="flex align-items-center justify-content-center cursor-pointer mr-4"
+    >
+      <img
+        alt="logo"
+        src={logoWide}
+        height="50"
+        className="bg-white-alpha-50 border-round p-1"
+      ></img>
+    </ScrollLink>
   )
   const end = (
     <div className="flex align-items-center gap-2 text-white">
@@ -146,10 +154,6 @@ export default function Navbar() {
       />
     </div>
   )
-
-  const handleNavClick = (section: string) => {
-    navigate(section === 'home' ? '/' : `/${section}`)
-  }
 
   return (
     <nav className="fixed top-0 left-0 w-full shadow flex justify-center z-5 bg-transparent">
