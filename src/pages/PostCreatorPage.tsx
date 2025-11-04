@@ -1,7 +1,7 @@
 // src/pages/PostCreatorPage.tsx
 import React, { useState, useRef } from 'react'
 import { InputText } from 'primereact/inputtext'
-import { Button } from 'primereact/Button'
+import { Button } from 'primereact/button'
 import { InputTextarea } from 'primereact/inputtextarea'
 import { Dropdown } from 'primereact/dropdown'
 import { Calendar } from 'primereact/calendar'
@@ -141,7 +141,14 @@ const PostCreatorPage = () => {
               <Button
                 onClick={() => {
                   setBlocks((prev) =>
-                    prev.map((b, i) => (i === idx ? { ...b, content: editingContent } : b)),
+                    prev.map((b, i) => {
+                      // Only update content when this block is a paragraph. This avoids
+                      // assigning a ParagraphContent to an image block's string content.
+                      if (i === idx && b.type === 'p') {
+                        return { ...b, content: editingContent }
+                      }
+                      return b
+                    }),
                   )
                   setEditingIndex(null)
                   setEditingContent({ en: '', pl: '' })
