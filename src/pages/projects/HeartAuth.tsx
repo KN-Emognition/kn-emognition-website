@@ -5,7 +5,7 @@ const ProjectsPage = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="lg:h-screen w-screen page navbar-padding flex flex-column justify-content-center align-items-center pt-8 pb-5">
+    <section className="lg:h-screen w-screen page navbar-padding flex flex-column justify-content-center align-items-center pb-5">
       <div className="text-center pt-5">
         <h1>{t('pages.projects.heartauth.title')}</h1>
         <h2 className="font-normal text-xl lg:text-2xl">

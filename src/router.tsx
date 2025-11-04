@@ -1,8 +1,11 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, Navigate } from 'react-router-dom'
 import AppLayout from './components/AppLayout/index.tsx'
 import NotFoundPage from './pages/NotFoundPage.tsx'
 import { ScrollLayout } from './ScrollLayout.tsx'
-import HeartAuth from './pages/projects/HeartAuth.tsx'
+import HeartAuth from '@/pages/projects/HeartAuth.tsx'
+import BlogPage from '@/pages/BlogPage.tsx'
+import BlogPostPage from '@/pages/BlogPostPage.tsx'
+import PostCreatorPage from '@/pages/PostCreatorPage.tsx'
 
 export const router = createBrowserRouter([
   {
@@ -30,12 +33,28 @@ export const router = createBrowserRouter([
         element: <ScrollLayout />,
       },
       {
+        path: '/blog',
+        element: <BlogPage />,
+      },
+      {
+        path: '/blog/:postId',
+        element: <BlogPostPage />,
+      },
+      {
         path: '/projects/heartauth',
         element: <HeartAuth />,
       },
       {
-        path: '*',
+        path: '/postcreator',
+        element: <PostCreatorPage />,
+      },
+      {
+        path: '/notfound',
         element: <NotFoundPage />,
+      },
+      {
+        path: '*',
+        element: <Navigate to="/notfound" replace />,
       },
     ],
   },

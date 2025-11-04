@@ -108,6 +108,12 @@ export default function Navbar() {
       template: itemRenderer,
       url: 'contact',
     },
+    // {
+    //   label: 'navigation.blog',
+    //   icon: 'pi pi-book',
+    //   template: itemRenderer,
+    //   url: 'blog',
+    // },
     {
       label: 'navigation.projects',
       icon: 'pi pi-search',

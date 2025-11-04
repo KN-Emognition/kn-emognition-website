@@ -10,7 +10,8 @@
     "team": "Zespół",
     "projects": "Projekty",
     "recruitment": "Rekrutacja",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "blog": "Blog"
   },
   "socials": {
     "github": "GitHub",
@@ -27,6 +28,12 @@
     "team": {
       "heading": "Nasz zespół",
       "lead": "Poznaj zaangażowanych studentów, którzy koordynują badania, wydarzenia i partnerstwa w KN Emognition."
+    },
+    "blog": {
+      "heading": "Nasz blog",
+      "lead": "Tu znajdziesz aktualności z działalności naszego koła.",
+      "photo_alt": "(\uD83D\uDCF8zdjęcie) ",
+      "button": "Czytaj więcej"
     },
     "projects": {
       "heartauth": {
