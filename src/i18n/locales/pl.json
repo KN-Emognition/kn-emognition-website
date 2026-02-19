@@ -40,7 +40,14 @@
         "photo": "",
         "title": "Projekt HeartAuth",
         "short_description": "Autentykacja użytkowników za pomocą sygnałów EKG",
-        "description": "HeartAuth to system biometrycznego uwierzytelniania wykorzystujący unikalny rytm pracy serca jako klucz do potwierdzania tożsamości.Zamiast haseł czy kodów system analizuje indywidualny sygnał EKG, tworząc nowy sposób logowania. HeartAuth bezproblemowo integruje się z istniejącymi systemami zarządzania tożsamością, takimi jak Keycloak, i nie wymaga dodatkowej infrastruktury. Dzięki standardowi OAuth2 umożliwia łatwą integrację z dowolnymi aplikacjami i usługami. To nowa era w cyfrowym bezpieczeństwie — Twoje serce staje się Twoim hasłem.",
+        "description": "HeartAuth to system biometrycznego uwierzytelniania wykorzystujący unikalny rytm pracy serca jako klucz do potwierdzania tożsamości. Zamiast haseł czy kodów system analizuje indywidualny sygnał EKG, tworząc nowy sposób logowania. HeartAuth bezproblemowo integruje się z istniejącymi systemami zarządzania tożsamością, takimi jak Keycloak, i nie wymaga dodatkowej infrastruktury. Dzięki standardowi OAuth2 umożliwia łatwą integrację z dowolnymi aplikacjami i usługami. To nowa era w cyfrowym bezpieczeństwie - Twoje serce staje się Twoim hasłem.",
+        "repo": ""
+      },
+      "resqvoice": {
+        "photo": "",
+        "title": "ResQVoice X GOPR",
+        "short_description": "Usprawnienie rozmów alarmowych GOPR - Speech to Text, interpretacja języka naturalnego i integracja z telefonią",
+        "description": "ResQVoice to projekt mający na celu usprawnienie rozmów alarmowych GOPR poprzez stworzenie kompleksowego systemu łączącego interfejs telefonii, backend oraz aplikację webową wspierającą dyspozytorów w prowadzeniu rozmów. Projekt obejmuje integrację modułów AI do przetwarzania dźwięku na tekst oraz dalszej analizy treści rozmów, w tym preprocessing i ładowanie danych. W ramach prac realizowane jest testowanie i porównywanie modeli Speech-to-Text (m.in. Whisper, PyTorch), komunikacja z telefonią komórkową (SIP Trunk, SIP) oraz opracowywanie i negocjowanie wymagań systemowych z interesariuszami.",
         "repo": ""
       }
     },

@@ -42,6 +42,13 @@
         "short_description": "User authentication using ECG signals",
         "description": "HeartAuth is a biometric authentication system that uses the unique rhythm of the human heart as a key to verify identity. Instead of passwords or codes, the system analyzes an individual’s ECG signal, introducing a new way of logging in. HeartAuth seamlessly integrates with existing identity management systems such as Keycloak and requires no additional infrastructure. Thanks to the OAuth2 standard, it enables easy integration with any applications and services. It’s a new era of digital security — your heart becomes your password.",
         "repo": ""
+      },
+      "resqvoice": {
+        "photo": "",
+        "title": "ResQVoice X GOPR",
+        "short_description": "Improving GOPR emergency calls — Speech to Text and telephony integration",
+        "description": "ResQVoice is a project aimed at improving emergency calls for GOPR by developing a comprehensive system that integrates a telephony interface, backend, and a web application to support dispatchers during emergency conversations. The project involves AI-based audio-to-text processing and further text analysis, including data preprocessing and loading. Key activities include testing and evaluating Speech-to-Text models (e.g. Whisper, PyTorch-based solutions), communication with mobile telephony systems (SIP Trunk, SIP), and negotiating and refining system requirements with stakeholders.",
+        "repo": ""
       }
     },
     "recruitment": {

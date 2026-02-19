@@ -1,30 +1,34 @@
-import { useNavigate } from 'react-router-dom'
-import { Link as ScrollLink } from 'react-scroll'
-import type { MenuItem } from 'primereact/menuitem'
-import { useTranslation } from 'react-i18next'
-import { Dropdown, type DropdownChangeEvent, type DropdownProps } from 'primereact/dropdown'
-import { Menubar } from 'primereact/menubar'
-import { useState } from 'react'
-import logoWide from '@/assets/img/logo-wide.svg'
+import { useNavigate, useLocation } from 'react-router-dom' //
+import { Link as ScrollLink } from 'react-scroll' //
+import type { MenuItem } from 'primereact/menuitem' //
+import { useTranslation } from 'react-i18next' //
+import { Dropdown, type DropdownChangeEvent, type DropdownProps } from 'primereact/dropdown' //
+import { Menubar } from 'primereact/menubar' //
+import { useState } from 'react' //
+import logoWide from '@/assets/img/logo-wide.svg' //
+
 export default function Navbar() {
-  const navigate = useNavigate()
-  const { t, i18n } = useTranslation()
-  const currentLanguage = i18n.resolvedLanguage ?? i18n.language
+  const navigate = useNavigate() //
+  const location = useLocation() //
+  const { t, i18n } = useTranslation() //
+  const currentLanguage = i18n.resolvedLanguage ?? i18n.language //
+
   const languages = [
     { flag_code: 'pl', code: 'pl', label: 'Polski' },
     { flag_code: 'gb', code: 'en', label: 'English' },
-  ]
+  ] //
+
   const [selectedCountry, setSelectedCountry] = useState(
     languages.find((lang) => lang.code === currentLanguage) || languages[0],
-  )
+  ) //
 
   const handleNavClick = (section: string) => {
-    navigate(section === 'home' ? '/' : `/${section}`)
+    navigate(section === 'home' ? '/' : `/${section}`) //
   }
 
   const handleCountryChange = (e: DropdownChangeEvent) => {
-    setSelectedCountry(e.value)
-    i18n.changeLanguage(e.value.code).then(() => {})
+    setSelectedCountry(e.value) //
+    i18n.changeLanguage(e.value.code).then(() => {}) //
   }
 
   const selectedCountryTemplate = (
@@ -36,7 +40,7 @@ export default function Navbar() {
         <div className="flex align-items-center">
           <img
             alt={option.label}
-            src="https://primefaces.org/cdn/primereact/images/flag/flag_placeholder.png" // TODO use local asset
+            src="https://primefaces.org/cdn/primereact/images/flag/flag_placeholder.png"
             className={`mr-2 flag flag-${option.flag_code.toLowerCase()}`}
             style={{ width: '18px' }}
           />
@@ -44,9 +48,8 @@ export default function Navbar() {
         </div>
       )
     }
-
     return <span>{props.placeholder}</span>
-  }
+  } //
 
   const countryOptionTemplate = (option: { label: string; code: string; flag_code: string }) => {
     return (
@@ -60,7 +63,7 @@ export default function Navbar() {
         <div>{option.label}</div>
       </div>
     )
-  }
+  } //
 
   const itemRenderer = (item: MenuItem) =>
     item.url ? (
@@ -81,52 +84,28 @@ export default function Navbar() {
         <span className={item.icon} />
         <span className="ml-2">{t(item.label ?? '')}</span>
       </div>
-    )
+    ) //
 
   const items: MenuItem[] = [
-    {
-      label: 'navigation.about',
-      icon: 'pi pi-info-circle',
-      template: itemRenderer,
-      url: 'about',
-    },
-    {
-      label: 'navigation.team',
-      icon: 'pi pi-users',
-      template: itemRenderer,
-      url: 'team',
-    },
+    { label: 'navigation.about', icon: 'pi pi-info-circle', template: itemRenderer, url: 'about' },
+    { label: 'navigation.team', icon: 'pi pi-users', template: itemRenderer, url: 'team' },
     {
       label: 'navigation.recruitment',
       icon: 'pi pi-pen-to-square',
       template: itemRenderer,
       url: 'recruitment',
     },
-    {
-      label: 'navigation.contact',
-      icon: 'pi pi-envelope',
-      template: itemRenderer,
-      url: 'contact',
-    },
-    // {
-    //   label: 'navigation.blog',
-    //   icon: 'pi pi-book',
-    //   template: itemRenderer,
-    //   url: 'blog',
-    // },
+    { label: 'navigation.contact', icon: 'pi pi-envelope', template: itemRenderer, url: 'contact' },
     {
       label: 'navigation.projects',
       icon: 'pi pi-search',
       template: itemRenderer,
       items: [
-        {
-          label: 'HeartAuth',
-          template: itemRenderer,
-          url: 'projects/heartauth',
-        },
+        { label: 'HeartAuth', template: itemRenderer, url: 'projects/heartauth' },
+        { label: 'ResQVoice', template: itemRenderer, url: 'projects/resqvoice' },
       ],
     },
-  ]
+  ] //
 
   const start = (
     <ScrollLink
@@ -138,14 +117,10 @@ export default function Navbar() {
       onClick={() => handleNavClick('home')}
       className="flex align-items-center justify-content-center cursor-pointer mr-4"
     >
-      <img
-        alt="logo"
-        src={logoWide}
-        height="50"
-        className="bg-white-alpha-50 border-round p-1"
-      ></img>
+      <img alt="logo" src={logoWide} height="50" className="bg-white-alpha-50 border-round p-1" />
     </ScrollLink>
-  )
+  ) //
+
   const end = (
     <div className="flex align-items-center gap-2 text-white">
       <Dropdown
@@ -159,11 +134,20 @@ export default function Navbar() {
         className="text-white md:w-14rem bg-white-alpha-10 border-white-alpha-30 hover:border-blue-500"
       />
     </div>
-  )
+  ) //
 
   return (
-    <nav className="fixed top-0 left-0 w-full shadow flex justify-center z-5 bg-transparent">
-      <Menubar model={items} start={start} end={end} className="w-full glass bg-black-alpha-20" />
+    <nav
+      className="fixed top-0 left-0 w-full shadow flex justify-center bg-transparent"
+      style={{ zIndex: 1000 }}
+    >
+      <Menubar
+        key={location.pathname}
+        model={items}
+        start={start}
+        end={end}
+        className="w-full glass bg-black-alpha-20"
+      />
     </nav>
   )
 }

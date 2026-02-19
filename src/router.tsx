@@ -3,6 +3,7 @@ import AppLayout from './components/AppLayout/index.tsx'
 import NotFoundPage from './pages/NotFoundPage.tsx'
 import { ScrollLayout } from './ScrollLayout.tsx'
 import HeartAuth from '@/pages/projects/HeartAuth.tsx'
+import ResqVoice from '@/pages/projects/ResqVoice.tsx'
 import BlogPage from '@/pages/BlogPage.tsx'
 import BlogPostPage from '@/pages/BlogPostPage.tsx'
 import PostCreatorPage from '@/pages/PostCreatorPage.tsx'
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
       {
         path: '/projects/heartauth',
         element: <HeartAuth />,
+      },
+      {
+        path: '/projects/resqvoice',
+        element: <ResqVoice />,
       },
       {
         path: '/postcreator',
