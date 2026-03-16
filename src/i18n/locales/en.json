@@ -49,6 +49,13 @@
         "short_description": "Improving GOPR emergency calls — Speech to Text and telephony integration",
         "description": "ResQVoice is a project aimed at improving emergency calls for GOPR by developing a comprehensive system that integrates a telephony interface, backend, and a web application to support dispatchers during emergency conversations. The project involves AI-based audio-to-text processing and further text analysis, including data preprocessing and loading. Key activities include testing and evaluating Speech-to-Text models (e.g. Whisper, PyTorch-based solutions), communication with mobile telephony systems (SIP Trunk, SIP), and negotiating and refining system requirements with stakeholders.",
         "repo": ""
+      },
+      "psychotherapy": {
+        "photo": "",
+        "title": "Psychotherapy Support",
+        "short_description": "A project combining psychotherapy with modern technologies through analysis of biological signals, audio recordings and textual content to support patients and therapists in the therapeutic process.",
+        "description": "Psychotherapy Support is a project carried out by our student organization aimed at supporting the psychotherapy process using modern technologies and data analysis. The project analyzes biological signals, audio recordings and textual content to help patients better understand and monitor their emotional states between therapy sessions.\n\nThe solution is also intended to support therapists by providing additional tools for analyzing patients’ needs and experiences. Participation in the project offers the opportunity to work in an international research group and to develop skills in data analysis, programming and emerging technologies.",
+        "repo": ""
       }
     },
     "recruitment": {

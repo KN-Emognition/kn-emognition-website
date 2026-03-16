@@ -101,8 +101,21 @@ export default function Navbar() {
       icon: 'pi pi-search',
       template: itemRenderer,
       items: [
-        { label: 'HeartAuth', template: itemRenderer, url: 'projects/heartauth' },
-        { label: 'ResQVoice', template: itemRenderer, url: 'projects/resqvoice' },
+        {
+          label: 'pages.projects.heartauth.title',
+          template: itemRenderer,
+          url: 'projects/heartauth',
+        },
+        {
+          label: 'pages.projects.resqvoice.title',
+          template: itemRenderer,
+          url: 'projects/resqvoice',
+        },
+        {
+          label: 'pages.projects.psychotherapy.title',
+          template: itemRenderer,
+          url: 'projects/psychotherapy',
+        },
       ],
     },
   ] //

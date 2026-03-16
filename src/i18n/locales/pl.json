@@ -49,6 +49,13 @@
         "short_description": "Usprawnienie rozmów alarmowych GOPR - Speech to Text, interpretacja języka naturalnego i integracja z telefonią",
         "description": "ResQVoice to projekt mający na celu usprawnienie rozmów alarmowych GOPR poprzez stworzenie kompleksowego systemu łączącego interfejs telefonii, backend oraz aplikację webową wspierającą dyspozytorów w prowadzeniu rozmów. Projekt obejmuje integrację modułów AI do przetwarzania dźwięku na tekst oraz dalszej analizy treści rozmów, w tym preprocessing i ładowanie danych. W ramach prac realizowane jest testowanie i porównywanie modeli Speech-to-Text (m.in. Whisper, PyTorch), komunikacja z telefonią komórkową (SIP Trunk, SIP) oraz opracowywanie i negocjowanie wymagań systemowych z interesariuszami.",
         "repo": ""
+      },
+      "psychotherapy": {
+        "photo": "",
+        "title": "Psychotherapy Support",
+        "short_description": "Projekt łączący psychoterapię z nowoczesnymi technologiami poprzez analizę sygnałów biologicznych, nagrań audio i treści tekstowych",
+        "description": "Psychotherapy Support to projekt realizowany przez nasze koło naukowe, którego celem jest wspieranie procesu psychoterapii przy użyciu nowoczesnych technologii i analizy danych. W ramach projektu analizowane są sygnały biologiczne, nagrania audio oraz treści tekstowe, aby pomóc pacjentom lepiej rozumieć i monitorować swoje stany emocjonalne pomiędzy sesjami terapeutycznymi.\n\nRozwiązanie ma również wspierać terapeutów, dostarczając im dodatkowych narzędzi do analizy potrzeb i doświadczeń pacjentów. Udział w projekcie daje możliwość pracy w międzynarodowej grupie badawczej oraz rozwijania kompetencji z zakresu analizy danych, programowania i nowych technologii.",
+        "repo": ""
       }
     },
     "recruitment": {

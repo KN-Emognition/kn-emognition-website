@@ -62,6 +62,27 @@
     },
     {
       "section_name": {
+        "en": "Club Caretaker",
+        "pl": "Opiekun koła"
+      },
+      "members": [
+        {
+          "id": 5,
+          "name": "Stasiek Saganowski",
+          "role": {
+            "en": "Club Caretaker",
+            "pl": "Opiekun koła"
+          },
+          "photoUrl": "stasiek-saganowski.png",
+          "links": {
+            "linkedin": "",
+            "github": ""
+          }
+        }
+      ]
+    },
+    {
+      "section_name": {
         "en": "Team Members",
         "pl": "Członkowie zespołu"
       },
@@ -176,6 +197,14 @@
           "links": {
             "linkedin": "",
             "github": ""
+          }
+        },
+        {
+          "id": 17,
+          "name": "Wiktoria Wajman-Sikora",
+          "photoUrl": "",
+          "links": {
+            "github": "https://github.com/JestemSikora"
           }
         }
       ]
