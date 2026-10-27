@@ -1,28 +1,28 @@
 import { useTranslation } from 'react-i18next'
-import { Card } from 'primereact/card'
 
 const RecruitmentPage = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="h-screen flex flex-column justify-content-center align-items-center text-center w-screen">
-      <div className="content flex align-items-center justify-content-center">
-        <Card className="w-11 lg:w-8 bg-black-alpha-30 text-white p-1 lg:p-5">
-          <h1 className="text-xl lg:text-5xl">{t('pages.recruitment.heading')}</h1>
-          <h2 className="text-sm lg:text-xl page-lead font-normal py-3 lg:py-5 text-justify">
-            {t('pages.recruitment.lead')}
-          </h2>
-          <h2 className="text-sm lg:text-xl page-lead font-normal pb-3 lg:pb-5 text-justify">
-            {t('pages.recruitment.lead2')}
-          </h2>
-          <a
-            href="https://forms.gle/Krsdrks1zFMcaMmVA"
-            className="p-button bg-white-alpha-10 border-white-alpha-30 scale-on-hover"
-          >
-            <span className="p-button-icon pi pi-pen-to-square" aria-hidden="true" />
-            <div className="pl-2">{t('pages.recruitment.cta')}</div>
-          </a>
-        </Card>
+    <section id="recruitment" className="section">
+      <div className="container">
+        <div className="cta-band reveal">
+          <span className="eyebrow">{t('navigation.recruitment')}</span>
+          <h2>{t('pages.recruitment.heading')}</h2>
+          <p className="lead">{t('pages.recruitment.lead')}</p>
+          <p className="lead">{t('pages.recruitment.lead2')}</p>
+          <div className="cta-band__actions">
+            <a
+              href="https://forms.gle/Krsdrks1zFMcaMmVA"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="pi pi-pen-to-square" aria-hidden="true" />
+              {t('pages.recruitment.cta')}
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   )

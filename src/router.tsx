@@ -8,7 +8,6 @@ import Psychotherapy from '@/pages/projects/Psychotherapy.tsx'
 import ProjectsPage from './pages/ProjectsPage.tsx'
 import BlogPage from '@/pages/BlogPage.tsx'
 import BlogPostPage from '@/pages/BlogPostPage.tsx'
-import PostCreatorPage from '@/pages/PostCreatorPage.tsx'
 
 export const router = createBrowserRouter([
   {
@@ -61,7 +60,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/postcreator',
-        element: <PostCreatorPage />,
+        lazy: async () => ({ Component: (await import('@/pages/PostCreatorPage.tsx')).default }),
       },
       {
         path: '/notfound',

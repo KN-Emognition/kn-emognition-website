@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Knemognition Student Organization",
+    "title": "KN Emognition – AI & emotions science club",
     "switchToEnglish": "English",
     "switchToPolish": "Polish"
   },
@@ -11,7 +11,10 @@
     "projects": "Projects",
     "recruitment": "Recruitment",
     "contact": "Contact",
-    "blog": "Blog"
+    "blog": "Blog",
+    "menu": "Menu",
+    "language": "Language",
+    "skip": "Skip to content"
   },
   "socials": {
     "github": "GitHub",
@@ -23,7 +26,12 @@
     "landing": {
       "heading": "Welcome to KN Emognition",
       "lead": "Where emotions meet algorithms.",
-      "cta": "Discover what we are building together."
+      "cta": "Discover what we are building together.",
+      "eyebrow": "Student science club",
+      "heading_prefix": "Welcome to",
+      "heading_brand": "KN Emognition",
+      "cta_projects": "Our projects",
+      "cta_join": "Join us"
     },
     "team": {
       "heading": "Our Team",
@@ -32,8 +40,10 @@
     "blog": {
       "heading": "Our blog",
       "lead": "Here you will find news about our club's activities.",
-      "photo_alt": "(\uD83D\uDCF8photo) ",
-      "button": "Read more"
+      "photo_alt": "(📸photo) ",
+      "button": "Read more",
+      "empty": "There are no posts yet.",
+      "back": "All posts"
     },
     "projects": {
       "heartauth": {
@@ -56,7 +66,11 @@
         "short_description": "A project combining psychotherapy with modern technologies through analysis of biological signals, audio recordings and textual content to support patients and therapists in the therapeutic process.",
         "description": "Psychotherapy Support is a project carried out by our student organization aimed at supporting the psychotherapy process using modern technologies and data analysis. The project analyzes biological signals, audio recordings and textual content to help patients better understand and monitor their emotional states between therapy sessions.\n\nThe solution is also intended to support therapists by providing additional tools for analyzing patients’ needs and experiences. Participation in the project offers the opportunity to work in an international research group and to develop skills in data analysis, programming and emerging technologies.",
         "repo": ""
-      }
+      },
+      "more": "Learn more",
+      "back": "All projects",
+      "heading": "Our projects",
+      "lead": "Research and implementations that combine artificial intelligence with biological signals, speech and text."
     },
     "recruitment": {
       "heading": "Recruitment",
@@ -70,11 +84,35 @@
     },
     "aboutus": {
       "heading": "About us",
-      "lead": "We are an organization that combines a passion for modern technologies with a desire to create real innovations. We operate at the intersection of various fields of science, focusing on the development and implementation of solutions based on artificial intelligence. We emphasize interdisciplinarity, creativity, and cooperation. We believe that the combination of technology and human potential drives real progress."
+      "lead": "We are an organization that combines a passion for modern technologies with a desire to create real innovations. We operate at the intersection of various fields of science, focusing on the development and implementation of solutions based on artificial intelligence. We emphasize interdisciplinarity, creativity, and cooperation. We believe that the combination of technology and human potential drives real progress.",
+      "pillars": {
+        "interdisciplinarity": {
+          "title": "Interdisciplinarity",
+          "text": "We work at the intersection of different fields of science."
+        },
+        "creativity": {
+          "title": "Creativity",
+          "text": "We build solutions based on artificial intelligence."
+        },
+        "cooperation": {
+          "title": "Cooperation",
+          "text": "We combine technology with human potential."
+        }
+      }
     },
     "notFound": {
       "heading": "Page Not Found",
-      "lead": "We could not find the page you were looking for."
+      "lead": "We could not find the page you were looking for.",
+      "cta": "Back to home page"
     }
+  },
+  "footer": {
+    "explore": "Explore",
+    "rights": "All rights reserved."
+  },
+  "ecg": {
+    "title": "Live ECG signal (simulation)",
+    "aria": "Animated ECG signal chart",
+    "rate": "Heart rate"
   }
 }

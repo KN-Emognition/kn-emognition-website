@@ -5,15 +5,15 @@ const TeamPage = () => {
   const { t } = useTranslation()
 
   return (
-    <section
-      id="team-section"
-      className="flex flex-column justify-content-center align-items-center gap-3 py-8 min-full-height px-4 w-screen"
-    >
-      <div className="flex flex-column flex-wrap justify-center align-items-center text-center">
-        <h1>{t('pages.team.heading')}</h1>
-        <p className="page-lead">{t('pages.team.lead')}</p>
+    <section id="team" className="section">
+      <div className="container">
+        <div className="section-head reveal">
+          <span className="eyebrow">{t('navigation.team')}</span>
+          <h2>{t('pages.team.heading')}</h2>
+          <p className="lead">{t('pages.team.lead')}</p>
+        </div>
+        <TeamSection />
       </div>
-      <TeamSection />
     </section>
   )
 }
