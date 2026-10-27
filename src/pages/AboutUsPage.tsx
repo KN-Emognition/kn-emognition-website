@@ -1,18 +1,39 @@
 import { useTranslation } from 'react-i18next'
-import { Card } from 'primereact/card'
+
+const pillars = [
+  { key: 'interdisciplinarity', icon: 'pi pi-share-alt', color: 'var(--violet)' },
+  { key: 'creativity', icon: 'pi pi-lightbulb', color: 'var(--amber)' },
+  { key: 'cooperation', icon: 'pi pi-users', color: 'var(--teal)' },
+] as const
 
 const AboutUsPage = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="hero-aboutus h-screen flex flex-column justify-content-center align-items-center text-center w-screen">
-      <div className="content flex align-items-center justify-content-center w-full">
-        <Card className="w-12 lg:w-8 bg-black-alpha-20 text-white w-full p-1 lg:p-5">
-          <h1 className="text-xl lg:text-5xl">{t('pages.aboutus.heading')}</h1>
-          <h2 className="text-sm lg:text-xl page-lead pt-5 text-justify font-normal">
+    <section id="about" className="section">
+      <div className="container about-grid">
+        <div className="reveal">
+          <span className="eyebrow">{t('navigation.about')}</span>
+          <h2>{t('pages.aboutus.heading')}</h2>
+          <p className="about-text" style={{ marginTop: '1.25rem' }}>
             {t('pages.aboutus.lead')}
-          </h2>
-        </Card>
+          </p>
+        </div>
+        <div className="pillars">
+          {pillars.map((p) => (
+            <div
+              key={p.key}
+              className="pillar reveal"
+              style={{ '--c': p.color } as React.CSSProperties}
+            >
+              <i className={p.icon} aria-hidden="true" />
+              <div>
+                <h3>{t(`pages.aboutus.pillars.${p.key}.title`)}</h3>
+                <p>{t(`pages.aboutus.pillars.${p.key}.text`)}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

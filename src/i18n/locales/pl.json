@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Organizacja studencka Knemognition",
+    "title": "KN Emognition – koło naukowe AI i emocji",
     "switchToEnglish": "Angielski",
     "switchToPolish": "Polski"
   },
@@ -11,7 +11,10 @@
     "projects": "Projekty",
     "recruitment": "Rekrutacja",
     "contact": "Kontakt",
-    "blog": "Blog"
+    "blog": "Blog",
+    "menu": "Menu",
+    "language": "Język",
+    "skip": "Przejdź do treści"
   },
   "socials": {
     "github": "GitHub",
@@ -23,7 +26,12 @@
     "landing": {
       "heading": "Witamy w KN Emognition",
       "lead": "Gdzie emocje spotykają się z algorytmami.",
-      "cta": "Poznaj, nad czym wspólnie pracujemy."
+      "cta": "Poznaj, nad czym wspólnie pracujemy.",
+      "eyebrow": "Koło naukowe",
+      "heading_prefix": "Witamy w",
+      "heading_brand": "KN Emognition",
+      "cta_projects": "Nasze projekty",
+      "cta_join": "Dołącz do nas"
     },
     "team": {
       "heading": "Nasz zespół",
@@ -32,8 +40,10 @@
     "blog": {
       "heading": "Nasz blog",
       "lead": "Tu znajdziesz aktualności z działalności naszego koła.",
-      "photo_alt": "(\uD83D\uDCF8zdjęcie) ",
-      "button": "Czytaj więcej"
+      "photo_alt": "(📸zdjęcie) ",
+      "button": "Czytaj więcej",
+      "empty": "Nie ma jeszcze żadnych wpisów.",
+      "back": "Wszystkie wpisy"
     },
     "projects": {
       "heartauth": {
@@ -56,7 +66,11 @@
         "short_description": "Projekt łączący psychoterapię z nowoczesnymi technologiami poprzez analizę sygnałów biologicznych, nagrań audio i treści tekstowych",
         "description": "Psychotherapy Support to projekt realizowany przez nasze koło naukowe, którego celem jest wspieranie procesu psychoterapii przy użyciu nowoczesnych technologii i analizy danych. W ramach projektu analizowane są sygnały biologiczne, nagrania audio oraz treści tekstowe, aby pomóc pacjentom lepiej rozumieć i monitorować swoje stany emocjonalne pomiędzy sesjami terapeutycznymi.\n\nRozwiązanie ma również wspierać terapeutów, dostarczając im dodatkowych narzędzi do analizy potrzeb i doświadczeń pacjentów. Udział w projekcie daje możliwość pracy w międzynarodowej grupie badawczej oraz rozwijania kompetencji z zakresu analizy danych, programowania i nowych technologii.",
         "repo": ""
-      }
+      },
+      "more": "Dowiedz się więcej",
+      "back": "Wszystkie projekty",
+      "heading": "Nasze projekty",
+      "lead": "Badania i wdrożenia, w których łączymy sztuczną inteligencję z sygnałami biologicznymi, mową i tekstem."
     },
     "recruitment": {
       "heading": "Rekrutacja",
@@ -70,11 +84,35 @@
     },
     "aboutus": {
       "heading": "O nas",
-      "lead": "Jesteśmy organizacją łączącą pasję do nowoczesnych technologii z chęcią tworzenia realnych innowacji. Działamy na styku różnych dziedzin nauki, koncentrując się na rozwoju i wdrażaniu rozwiązań opartych na sztucznej inteligencji. Stawiamy na interdyscyplinarność, kreatywność i współpracę. Wierzymy, że połączenie technologii i ludzkiego potencjału napędza prawdziwy postęp."
+      "lead": "Jesteśmy organizacją łączącą pasję do nowoczesnych technologii z chęcią tworzenia realnych innowacji. Działamy na styku różnych dziedzin nauki, koncentrując się na rozwoju i wdrażaniu rozwiązań opartych na sztucznej inteligencji. Stawiamy na interdyscyplinarność, kreatywność i współpracę. Wierzymy, że połączenie technologii i ludzkiego potencjału napędza prawdziwy postęp.",
+      "pillars": {
+        "interdisciplinarity": {
+          "title": "Interdyscyplinarność",
+          "text": "Działamy na styku różnych dziedzin nauki."
+        },
+        "creativity": {
+          "title": "Kreatywność",
+          "text": "Tworzymy rozwiązania oparte na sztucznej inteligencji."
+        },
+        "cooperation": {
+          "title": "Współpraca",
+          "text": "Łączymy technologię z potencjałem człowieka."
+        }
+      }
     },
     "notFound": {
       "heading": "Nie znaleziono strony",
-      "lead": "Nie mogliśmy odnaleźć strony, której szukasz."
+      "lead": "Nie mogliśmy odnaleźć strony, której szukasz.",
+      "cta": "Wróć na stronę główną"
     }
+  },
+  "footer": {
+    "explore": "Odkrywaj",
+    "rights": "Wszelkie prawa zastrzeżone."
+  },
+  "ecg": {
+    "title": "Sygnał EKG na żywo (symulacja)",
+    "aria": "Animowany wykres sygnału EKG",
+    "rate": "Tętno"
   }
 }

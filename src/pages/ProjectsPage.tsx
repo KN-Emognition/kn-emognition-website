@@ -1,25 +1,38 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
+import { projects } from '@/data/projects'
 
 const ProjectsPage = () => {
   const { t } = useTranslation()
 
-  const projectKeys = ['heartauth', 'resqvoice', 'psychotherapy']
-
   return (
-    <section className="page">
-      <h1>{t('pages.projects.heading')}</h1>
-      <p className="page-lead">{t('pages.projects.lead')}</p>
+    <section className="section page-top">
+      <div className="container">
+        <div className="section-head">
+          <span className="eyebrow">{t('navigation.projects')}</span>
+          <h1>{t('pages.projects.heading')}</h1>
+          <p className="lead">{t('pages.projects.lead')}</p>
+        </div>
 
-      <div className="grid grid-nogutter mt-4">
-        {projectKeys.map((key) => (
-          <div key={key} className="col-12 md:col-4 px-3 mb-4">
-            <Link to={`/projects/${key}`} className="card p-4 h-full block">
-              <h2 className="text-xl font-semibold">{t(`pages.projects.${key}.title`)}</h2>
-              <p className="mt-2 text-sm">{t(`pages.projects.${key}.short_description`)}</p>
+        <div className="project-grid">
+          {projects.map(({ key, icon, accent }) => (
+            <Link
+              key={key}
+              to={`/projects/${key}`}
+              className="card card--interactive project-card reveal"
+              style={{ '--accent': accent } as React.CSSProperties}
+            >
+              <span className="project-card__icon">
+                <i className={icon} aria-hidden="true" />
+              </span>
+              <h3>{t(`pages.projects.${key}.title`)}</h3>
+              <p>{t(`pages.projects.${key}.short_description`)}</p>
+              <span className="project-card__more">
+                {t('pages.projects.more')} <i className="pi pi-arrow-right" aria-hidden="true" />
+              </span>
             </Link>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   )
