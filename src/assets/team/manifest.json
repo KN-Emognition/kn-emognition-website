@@ -20,42 +20,41 @@
           }
         },
         {
-          "id": 2,
-          "name": "Karol Zając",
+          "id": 6,
+          "name": "Jakub Brzozowski",
           "role": {
             "en": "Vice-President",
             "pl": "Wiceprezes koła"
           },
-          "photoUrl": "karol-zajac.jpg",
+          "photoUrl": "jakub-brzozowski.jpg",
           "links": {
-            "github": "https://github.com/poziomk3",
-            "linkedin": "https://www.linkedin.com/in/p3-karol-zajac"
+            "github": "https://github.com/Bircheses"
           }
         },
         {
-          "id": 3,
-          "name": "Aleksander Woźniak",
+          "id": 8,
+          "name": "Dominika Mendyk",
+          "photoUrl": "dominika-mendyk.jpg",
+          "links": {
+            "linkedin": "https://www.linkedin.com/in/dominika-mendyk/",
+            "github": "https://github.com/DominikaMendyk"
+          },
           "role": {
             "en": "Vice-President",
             "pl": "Wiceprezes koła"
-          },
-          "photoUrl": "aleksander-wozniak.jpg",
-          "links": {
-            "github": "https://github.com/0leslaw",
-            "linkedin": "https://www.linkedin.com/in/aleksander-wo%C5%BAniak1/"
           }
         },
         {
-          "id": 4,
-          "name": "Kacper Tomczyk",
+          "id": 14,
+          "name": "Patryk Nogaś",
+          "photoUrl": "patryk-nogas.jpg",
+          "links": {
+            "linkedin": "",
+            "github": ""
+          },
           "role": {
             "en": "Treasurer",
             "pl": "Skarbnik koła"
-          },
-          "photoUrl": "kacper-tomczyk.jpg",
-          "links": {
-            "github": "https://github.com/therockey",
-            "linkedin": "https://www.linkedin.com/in/kacper-tomczyk-b585a4273/"
           }
         }
       ]
@@ -100,32 +99,11 @@
           }
         },
         {
-          "id": 6,
-          "name": "Jakub Brzozowski",
-          "role": {
-            "en": "Head of Hardware",
-            "pl": "Head of Hardware"
-          },
-          "photoUrl": "jakub-brzozowski.jpg",
-          "links": {
-            "github": "https://github.com/Bircheses"
-          }
-        },
-        {
           "id": 7,
           "name": "Mateusz Bukowski",
           "photoUrl": "mateusz-bukowski.jpg",
           "links": {
             "github": "https://github.com/MatiBukowski"
-          }
-        },
-        {
-          "id": 8,
-          "name": "Dominika Mendyk",
-          "photoUrl": "dominika-mendyk.jpg",
-          "links": {
-            "linkedin": "https://www.linkedin.com/in/dominika-mendyk/",
-            "github": "https://github.com/DominikaMendyk"
           }
         },
         {
@@ -174,15 +152,6 @@
           }
         },
         {
-          "id": 14,
-          "name": "Patryk Nogaś",
-          "photoUrl": "patryk-nogas.jpg",
-          "links": {
-            "linkedin": "",
-            "github": ""
-          }
-        },
-        {
           "id": 15,
           "name": "Mateusz Wojciechowski",
           "photoUrl": "mateusz-wojciechowski.jpg",
@@ -205,6 +174,45 @@
           "photoUrl": "",
           "links": {
             "github": "https://github.com/JestemSikora"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Karol Zając",
+          "photoUrl": "karol-zajac.jpg",
+          "links": {
+            "github": "https://github.com/poziomk3",
+            "linkedin": "https://www.linkedin.com/in/p3-karol-zajac"
+          },
+          "role": {
+            "en": "Vice-President 2025/2026",
+            "pl": "Wiceprezes 2025/2026"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Aleksander Woźniak",
+          "photoUrl": "aleksander-wozniak.jpg",
+          "links": {
+            "github": "https://github.com/0leslaw",
+            "linkedin": "https://www.linkedin.com/in/aleksander-wo%C5%BAniak1/"
+          },
+          "role": {
+            "en": "Vice-President 2025/2026",
+            "pl": "Wiceprezes 2025/2026"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Kacper Tomczyk",
+          "photoUrl": "kacper-tomczyk.jpg",
+          "links": {
+            "github": "https://github.com/therockey",
+            "linkedin": "https://www.linkedin.com/in/kacper-tomczyk-b585a4273/"
+          },
+          "role": {
+            "en": "Treasurer 2025/2026",
+            "pl": "Skarbnik 2025/2026"
           }
         }
       ]
